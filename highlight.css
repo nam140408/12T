@@ -1,0 +1,121 @@
+/* =========================
+   Khung chứa toàn bộ phần Highlights
+   ========================= */
+.highlights-container {
+
+    /* Chiếm toàn bộ chiều ngang phần tử cha */
+    width: 100%;
+
+    /* Giới hạn chiều rộng tối đa
+       giúp nội dung dễ đọc, không bị trải quá rộng */
+    max-width: 800px;
+
+    /* Tạo khoảng cách phía dưới
+       tách highlights với section tiếp theo */
+    margin-bottom: 50px;
+
+    /* Đồng bộ font chữ với toàn bộ trang */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =========================
+   Tiêu đề của phần Highlights
+   ========================= */
+.highlights-title {
+
+    /* Kích thước chữ lớn hơn nội dung thường
+       để thể hiện vai trò tiêu đề */
+    font-size: 1.7rem;
+
+    /* Chữ đậm để tạo điểm nhấn thị giác */
+    font-weight: 700;
+
+    /* Khoảng cách với box nội dung bên dưới */
+    margin-bottom: 25px;
+
+    /* Căn trái theo phong cách blog / bài viết */
+    text-align: left;
+
+    /* Màu đen thuần giúp tiêu đề rõ ràng, mạnh */
+    color: #000;
+}
+
+/* =========================
+   Hộp bao nội dung highlights
+   ========================= */
+.highlights-box {
+
+    /* Viền mảnh màu xám nhạt
+       giúp box nổi lên nhưng không quá gắt */
+    border: 1px solid #a8a1a1;
+
+    /* Bo góc nhẹ
+       tạo cảm giác mềm mại, hiện đại */
+    border-radius: 12px;
+
+    /* Padding bên trong:
+       - trên/dưới: 30px
+       - phải: 20px
+       - trái: 40px (tạo không gian cho bullet list) */
+    padding: 30px 20px 30px 40px;
+
+    /* Nền trắng giúp nội dung nổi bật,
+       tách khỏi background chung của trang */
+    background-color: #fff;
+}
+
+/* =========================
+   Danh sách gạch đầu dòng
+   ========================= */
+.highlights-box ul {
+
+    /* Dùng dấu chấm tròn (•) mặc định */
+    list-style-type: disc;
+
+    /* Thụt vào bên trái
+       để bullet và text không bị dính sát viền */
+    padding-left: 20px;
+
+    /* Bỏ margin mặc định của trình duyệt
+       để kiểm soát layout chính xác */
+    margin: 0;
+
+    /* Không chiếm toàn bộ chiều ngang
+       giúp text thoáng và dễ đọc hơn */
+    width: 95%;
+}
+
+/* =========================
+   Từng dòng highlight
+   ========================= */
+.highlights-box li {
+
+    /* Khoảng cách giữa các bullet
+       giúp nội dung không bị dồn */
+    margin-bottom: 15px;
+
+    /* Kích thước chữ hơi lớn hơn body text
+       để nhấn mạnh thông tin quan trọng */
+    font-size: 1.1rem;
+
+    /* Màu xám đậm, dịu hơn màu đen */
+    color: #333;
+
+    /* Giãn dòng
+       tăng khả năng đọc với câu dài */
+    line-height: 1.6;
+
+    /* Font weight bình thường
+       tránh gây nặng mắt khi đọc danh sách */
+    font-weight: 400;
+}
+
+/* =========================
+   Dòng highlight cuối cùng
+   ========================= */
+.highlights-box li:last-child {
+
+    /* Bỏ margin dưới
+       tránh tạo khoảng trống thừa ở đáy box */
+    margin-bottom: 0;
+}

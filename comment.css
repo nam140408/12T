@@ -1,0 +1,138 @@
+/* =========================
+   Khu vực chứa toàn bộ phần comment
+   ========================= */
+.comment-section {
+
+    /* Chiếm toàn bộ chiều ngang của phần tử cha */
+    width: 100%;
+
+    /* Giới hạn chiều ngang tối đa
+       giúp comment không quá rộng trên màn hình lớn */
+    max-width: 800px;
+
+    /* Tạo khoảng cách phía trên
+       để tách comment section khỏi nội dung phía trên */
+    margin-top: 60px;
+
+    /* Tạo khoảng trống phía dưới
+       giúp trang không bị cụt khi cuộn xuống cuối */
+    padding-bottom: 80px;
+}
+
+/* =========================
+   Form nhập comment
+   ========================= */
+.comment-form {
+
+    /* Sử dụng Flexbox để sắp xếp các input */
+    display: flex;
+
+    /* Xếp các phần tử theo chiều dọc (tên → nội dung → nút) */
+    flex-direction: column;
+
+    /* Căn các phần tử về bên trái
+       (không căn giữa như layout chính) */
+    align-items: flex-start;
+
+    /* Form chiếm toàn bộ chiều ngang section */
+    width: 100%;
+}
+
+/* =========================
+   Style chung cho input & textarea
+   ========================= */
+.comment-input, 
+.comment-textarea {
+
+    /* Input chiếm toàn bộ chiều ngang có thể */
+    width: 100%;
+
+    /* Viền mỏng màu xám nhạt
+       tạo cảm giác tối giản */
+    border: 1px solid #e0e0e0;
+
+    /* Bỏ bo góc để giữ phong cách vuông, hiện đại */
+    border-radius: 0;
+
+    /* Đồng bộ font với toàn bộ trang */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Kích thước chữ tiêu chuẩn, dễ đọc */
+    font-size: 1rem;
+
+    /* Màu chữ xám đậm, không quá gắt */
+    color: #333;
+
+    /* Bỏ viền xanh mặc định khi focus */
+    outline: none;
+
+    /* Khoảng đệm bên trong
+       giúp chữ không dính sát viền */
+    padding: 12px;
+}
+
+/* =========================
+   Ô nhập tên / email
+   ========================= */
+.comment-input {
+
+    /* Giới hạn chiều ngang
+       giúp input ngắn gọn, không quá dài */
+    max-width: 300px;
+
+    /* Tạo khoảng cách với textarea bên dưới */
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Ô nhập nội dung comment
+   ========================= */
+.comment-textarea {
+
+    /* Chiều cao tối thiểu
+       đủ để người dùng viết nội dung dài */
+    min-height: 150px;
+
+    /* Khoảng cách với nút submit */
+    margin-bottom: 20px;
+
+    /* Không cho kéo thay đổi kích thước
+       để giữ layout ổn định */
+    resize: none;
+}
+
+/* =========================
+   Nút gửi comment
+   ========================= */
+.submit-btn {
+
+    /* Nền đen tạo điểm nhấn mạnh */
+    background-color: #000;
+
+    /* Chữ trắng tương phản cao */
+    color: #fff;
+
+    /* Padding tạo cảm giác nút chắc tay */
+    padding: 12px 30px;
+
+    /* Bỏ viền mặc định của button */
+    border: none;
+
+    /* Đồng bộ font với toàn trang */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Chữ đậm để tăng độ nổi bật */
+    font-weight: 700;
+
+    /* Chuyển chữ thành IN HOA
+       tạo phong cách editorial */
+    text-transform: uppercase;
+
+    /* Giãn khoảng cách chữ
+       giúp nút trông “cao cấp” hơn */
+    letter-spacing: 1px;
+
+    /* Đổi con trỏ thành bàn tay
+       báo hiệu đây là phần có thể click */
+    cursor: pointer;
+}

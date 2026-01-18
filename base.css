@@ -1,0 +1,64 @@
+/* =========================
+   Tổng thể khung trang
+   ========================= */
+.main-wrapper {
+
+    /* Sử dụng Flexbox để bố cục các phần tử con */
+    display: flex;
+
+    /* Sắp xếp các phần tử con theo chiều dọc (từ trên xuống) */
+    flex-direction: column;
+
+    /* Căn các phần tử con theo trục ngang, đặt ở giữa */
+    align-items: center; 
+
+    /* Đặt font chữ chính cho toàn bộ nội dung bên trong */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Tạo khoảng đệm:
+       - 50px trên & dưới
+       - 20px trái & phải
+       giúp nội dung không dính sát viền màn hình */
+    padding: 50px 20px;
+}
+
+/* =========================
+   Header (tiêu đề trang)
+   ========================= */
+.site-header {
+
+    /* Căn chữ ra giữa theo chiều ngang */
+    text-align: center;
+
+    /* Tạo khoảng cách phía dưới header
+       để tách header với nội dung bên dưới */
+    margin-bottom: 30px;
+
+    /* Tăng kích thước chữ
+       (1.4rem ≈ 140% kích thước font gốc) */
+    font-size: 1.4rem;
+}
+
+/* =========================
+   Đường kẻ phân cách
+   ========================= */
+.divider {
+
+    /* Chiếm toàn bộ chiều ngang của phần tử cha */
+    width: 100%;
+
+    /* Giới hạn chiều ngang tối đa
+       giúp layout không quá rộng trên màn hình lớn */
+    max-width: 800px;
+
+    /* Chiều cao 1px để tạo đường kẻ mảnh */
+    height: 1px;
+
+    /* Màu xám nhạt cho đường phân cách
+       tạo cảm giác nhẹ và hiện đại */
+    background-color: #969090;
+
+    /* Tạo khoảng cách phía dưới
+       để tách divider với phần nội dung tiếp theo */
+    margin-bottom: 40px;
+}

@@ -1,0 +1,188 @@
+/* =========================
+   Khu vực nội dung chính của bài viết
+   ========================= */
+.content-area {
+
+    /* Chiếm toàn bộ chiều ngang phần tử cha */
+    width: 100%;
+
+    /* Giới hạn độ rộng để dễ đọc trên màn hình lớn */
+    max-width: 800px;
+
+    /* Dùng Flexbox để sắp xếp các khối nội dung */
+    display: flex;
+
+    /* Sắp xếp các phần tử theo chiều dọc */
+    flex-direction: column;
+
+    /* Căn các khối về bên trái
+       phù hợp với layout bài viết */
+    align-items: flex-start;
+}
+
+/* =========================
+   Phần thân bài viết
+   ========================= */
+.post-body {
+
+    /* Căn nội dung văn bản về bên trái */
+    text-align: left;
+
+    /* Chiếm toàn bộ chiều ngang content-area */
+    width: 100%;
+}
+
+/* =========================
+   Tiêu đề chính của bài viết
+   ========================= */
+.post-title {
+
+    /* Kích thước chữ lớn
+       thể hiện cấp độ tiêu đề cao nhất */
+    font-size: 1.8rem;
+
+    /* Màu xám đậm thay cho đen thuần
+       giúp dịu mắt hơn */
+    color: #333;
+
+    /* Khoảng cách với subtitle bên dưới */
+    margin-bottom: 10px;
+
+    /* Viết hoa toàn bộ chữ
+       tạo phong cách editorial / magazine */
+    text-transform: uppercase;
+
+    /* Giãn khoảng cách giữa các ký tự
+       giúp chữ in hoa dễ đọc hơn */
+    letter-spacing: 1px;
+}
+
+/* =========================
+   Tiêu đề phụ (subtitle)
+   ========================= */
+.sub-title {
+
+    /* Nhỏ hơn tiêu đề chính
+       nhưng vẫn nổi bật hơn body text */
+    font-size: 1.2rem;
+
+    /* Màu xám nhạt
+       thể hiện vai trò phụ */
+    color: #666;
+
+    /* Khoảng cách với nội dung bên dưới */
+    margin-bottom: 20px;
+
+    /* Font weight nhẹ
+       tạo cảm giác tinh tế */
+    font-weight: 400;
+}
+
+/* =========================
+   Đoạn mô tả / nội dung văn bản
+   ========================= */
+.description {
+
+    /* Đồng bộ font chữ với toàn trang */
+    font-family: 'Montserrat', sans-serif;
+
+    /* Font weight bình thường
+       tối ưu cho đọc dài */
+    font-weight: 400;
+
+    /* Kích thước chữ body tiêu chuẩn */
+    font-size: 1rem;
+
+    /* Màu xám đậm vừa phải
+       giảm mỏi mắt khi đọc */
+    color: #444;
+
+    /* Giãn dòng lớn
+       tăng khả năng đọc các đoạn dài */
+    line-height: 1.8;
+
+    /* Khoảng cách với phần tiếp theo */
+    margin-bottom: 30px;
+
+    /* Canh đều hai lề
+       tạo cảm giác bài viết gọn gàng, học thuật */
+    text-align: justify;
+}
+
+/* =========================
+   Danh sách trong bài viết
+   ========================= */
+.post-list {
+
+    /* Dùng dấu chấm tròn mặc định */
+    list-style-type: disc;
+
+    /* Thụt lề trái
+       để bullet và text rõ ràng */
+    padding-left: 25px;
+
+    /* Khoảng cách với nội dung phía dưới */
+    margin-bottom: 30px;
+}
+
+/* =========================
+   Từng mục trong danh sách
+   ========================= */
+.post-list li {
+
+    /* Kích thước chữ bằng body text */
+    font-size: 1rem;
+
+    /* Giãn dòng
+       giúp các dòng dài dễ đọc */
+    line-height: 1.8;
+
+    /* Màu xám trung tính */
+    color: #555;
+
+    /* Khoảng cách giữa các item */
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Khung chứa hình ảnh
+   ========================= */
+.image-container {
+
+    /* Chiếm toàn bộ chiều ngang nội dung */
+    width: 100%;
+
+    /* Khoảng cách với nội dung phía trên */
+    margin-top: 30px;
+
+    /* Dùng Flexbox để căn ảnh */
+    display: flex;
+
+    /* Căn ảnh ra giữa theo chiều ngang */
+    justify-content: center; 
+}
+
+/* =========================
+   Hình ảnh trong bài viết
+   ========================= */
+.image-container img {
+
+    /* Hiển thị dạng block
+       tránh khoảng trắng inline mặc định */
+    display: block;
+
+    /* Căn giữa ảnh (fallback nếu không dùng flex) */
+    margin: 0 auto;
+
+    /* Ảnh chiếm 50% chiều ngang
+       không quá lớn, không lấn text */
+    width: 50%;
+
+    /* Tự động scale chiều cao
+       giữ đúng tỉ lệ ảnh */
+    height: auto;
+
+    /* Bo góc nhẹ
+       tạo cảm giác hiện đại, mềm mại */
+    border-radius: 8px;
+}
